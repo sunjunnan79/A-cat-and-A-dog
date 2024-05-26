@@ -67,7 +67,7 @@ class Obstacle1(object):  # 地上的障碍物
 
 class Obstacle2(object):  # 空中的障碍物
     def __init__(self):
-        self.obstacleStatus = pygame.transform.scale(pygame.image.load('.\\images\\obstacle1.png'), (50, 50))
+        self.obstacleStatus = pygame.transform.scale(pygame.image.load('.\\images\\obstacle2.png'), (50, 50))
         self.obstacleRect = self.obstacleStatus.get_rect()
         self.speed = speed
         self.obstacleX = 1200
