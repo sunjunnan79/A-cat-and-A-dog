@@ -120,7 +120,7 @@ class Cat(object):
             self.catX = self.catX + 5
 
     def beat(self, dog):
-        if self.energy == 5:
+        if self.energy >= 3:
             self.beatS = True
             self.useenergy()
             self.angle = 0
@@ -155,8 +155,8 @@ class Cat(object):
             self.energy += 1
 
     def useenergy(self):
-        if self.energy >= 5:
-            self.energy -= 5
+        if self.energy >= 3:
+            self.energy -= 3
 
     def cutlive(self):  # 扣除生命
         if not self.defendStatus:
@@ -264,7 +264,7 @@ class Dog(object):
             self.dogX = self.dogX + 5
 
     def beat(self, cat):
-        if self.energy == 5:
+        if self.energy >= 3:
             self.beatS = True
             self.useenergy()
             self.angle = 0
@@ -307,8 +307,8 @@ class Dog(object):
             self.energy += 1
 
     def useenergy(self):
-        if self.energy >= 5:
-            self.energy -= 5
+        if self.energy >= 3:
+            self.energy -= 3
 
     def cutlive(self):  # 扣除生命
         if not self.defendStatus:
